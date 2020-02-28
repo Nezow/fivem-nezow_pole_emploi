@@ -5,4 +5,4 @@ Il est strictement interdit de renommer cette ressource Merci.
 Si vous souhaitez ajouter/modifier les métier, cela se passe dans le client/main.lua puis server/main.lua et le config.lua
 
 Créateur du NativeUI : 
-https://github.com/iTexZoz/NativeUILua_Reloaded
+https://github.com/iTexZoz
