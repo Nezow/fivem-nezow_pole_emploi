@@ -38,11 +38,13 @@ function AddPoleemploiMenu(menu)
         TriggerServerEvent('esx_joblisting:setJobslaughterer')
         Citizen.Wait(1)
         ESX.ShowHelpNotification("~g~✅Vous avez un nouveau métier")
+        print("By nezow")
     elseif item == unemployed then
     	_menuPool:CloseAllMenus(true)
         TriggerServerEvent('esx_joblisting:setJobsunemployed')
         Citizen.Wait(1)
         ESX.ShowHelpNotification("~g~✅Vous avez un nouveau métier")
+        print("By nezow")
         end
     end
 end
@@ -81,6 +83,7 @@ Citizen.CreateThread(function()
 
             if dist <= 1.2 then
                 ESX.ShowHelpNotification("Appuyez sur ~INPUT_TALK~ pour ouvrir le pôle emploi")
+                print("By nezow")
 				if IsControlJustPressed(1,51) then 
                     mainMenu:Visible(not mainMenu:Visible())
 				end
