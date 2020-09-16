@@ -39,7 +39,7 @@ AddPoleemploiMenu(mainMenu)
 _menuPool:RefreshIndex()
 
 local nezow = {
-    {title="Pôle Emploi", colour=5, id=267, x = -269.3767395019531, y = -955.19580078125, z = 30.25070571899414}
+    {title="Pôle Emploi", colour=5, id=267, x = -269.37, y = -955.19, z = 30.25}
 }
 
 Citizen.CreateThread(function()
