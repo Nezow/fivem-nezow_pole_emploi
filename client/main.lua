@@ -24,12 +24,10 @@ function AddPoleemploiMenu(menu)
     if item == slaughterer then
     	_menuPool:CloseAllMenus(true)
         TriggerServerEvent('esx_joblisting:setJobslaughterer')
-        Wait(1)
         ESX.ShowHelpNotification("~g~✅Vous avez un nouveau métier")
     elseif item == unemployed then
     	_menuPool:CloseAllMenus(true)
         TriggerServerEvent('esx_joblisting:setJobsunemployed')
-        Wait(1)
         ESX.ShowHelpNotification("~g~✅Vous avez un nouveau métier")
         end
     end
