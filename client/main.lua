@@ -56,17 +56,23 @@ end)
 
 Citizen.CreateThread(function()
     while true do
+        local pl = false
         _menuPool:ProcessMenus()
         for k in pairs(nezow) do
             local plyCoords = GetEntityCoords(GetPlayerPed(-1), false)
             local dist = Vdist(plyCoords.x, plyCoords.y, plyCoords.z, nezow[k].x, nezow[k].y, nezow[k].z)
             if dist <= 1.2 then
+                pl = true
                 ESX.ShowHelpNotification("Appuyez sur ~INPUT_TALK~ pour ouvrir le pôle emploi")
-				if IsControlJustPressed(1,51) then 
+				if IsControlJustPressed(1,51) then
                     mainMenu:Visible(not mainMenu:Visible())
 				end
             end
         end
-	    Wait(0)
+        if pl then
+            Wait(1)
+        else
+            Wait(400)
+        end
     end
 end)
